@@ -1,14 +1,10 @@
-package com.lambton;
+import java.time.LocalDate;
 
-import java.util.Date;
+public class StudentMainClass {
 
-public class StudentMainClass
-{
-public static void main(String[] args)
-{
-    Student s1 = new Student();
-    s1.setData(1,"Shree","Marella",new Date(2020,0,24),Gender.MALE,60 );
-    s1.printData();
-}
-
+    public static void main(String[] args) {
+        Student kashyap = new Student(1,"Shree","Marella", Student.Gender.male, LocalDate.of(1998,05,29
+        ),new Float[]{50.0f,80.0f,40f,70f,60f});
+        kashyap.printData();
+    }
 }
